@@ -5,7 +5,6 @@
     <meta name="viewport" method="IE Edge">
     <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1.0">
     <title>Olá, piloto!</title>
-    <script type="text/javascript" src="index.js"></script>
     <link rel="icon" href="Novo Projeto.ico" type="image/x-icon">
     <style>
         @font-face {
@@ -1289,5 +1288,19 @@
         </div>
       </li>
     </ol>
+    <script>
+        const flights = document.getElementById('list_flights');
+        const item = flights.getElementsByTagName('li');
+
+        for (let i = 0; i < item.length; i++) {
+            item[i].addEventListener('click', function() {
+                alert('o item clicado foi: ' + String(i));
+                localStorage.setItem('flightClicked', i.toString());
+                location.href = 'viewflight.html';
+            });
+        }
+
+
+    </script>
   </body>
 </html>
