@@ -5,7 +5,8 @@ window.onload = function() {
     var fromTo = document.getElementById('from_to');
     var fNum = document.getElementById('fnum');
     if (infos != null && infos[2] != null) {
-
+        fromTo.innerHTML = infos[0].replace("/", " • ");
+        fNum.innerHTML = infos[2].split("/")[0];
         document.title = "Vôo " + infos[2].split("/")[0];
     }
     
