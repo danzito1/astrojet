@@ -3,7 +3,8 @@ const item = flights.getElementByTagName('li');
 
 for (let i = 0; i < item.length; i++) {
     item[i].addEventListener('click', function() {
-        localStorage.setItem('flightClicked', i);
+        localStorage.setItem('flightClicked', i.toString());
+        location.href = 'viewflight.html';
     });
 }
 
