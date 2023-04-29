@@ -8,12 +8,49 @@
     <title>Observando vôo</title>
     <script src="viewflight.js"></script>
     <style>
+        @font-face {
+            font-family: manrope;
+            src: url('Manrope-Regular.ttf');
+        }
+    
         html {
             background-image: url('100 Sem Título_20230426111228.png');
+        }
+        
+        .top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #banner {
+            width: 45vh;
+            height: 20vh;
+            margin-left: 5vh;
+            margin-top: 5vh;
+            margin-right: 5vh;
+        }
+        
+        .top2 {
+            display: flex;
+            
+        }
+        
+        .top2 #fnum {
+            color: #fff;
+            font-family: manrope, Verdana;
+            font-size: 5vh;
+            
         }
     </style>
   </head>
   <body>
-    
+    <div class="top">
+      <img id="banner" src="">
+    </div>
+    <div class="top2">
+      <h1 id="fnum"></h1>
+      <h3 id="from_to"></h3>
+    </div>
   </body>
 </html>
