@@ -18,10 +18,16 @@ window.onload = function() {
     } else if (aviao === "A223") {
         let num = Math.floor(Math.random() * 3) + 1;
         if (num == 1) {
-            img.setAttribute("src", "270218379_1611388632540815_550111631583611342_n.jpg");
+            img.setAttribute("src", "272757582_658822735253684_6979556306424127227_n.webp.jpg");
         } else if (num == 2) {
-            img.setAttribute("src", "271072038_1256185188207498_589227468577376344_n.jpg");
+            img.setAttribute("src", "273824333_394539802477274_8817170027984017018_n.webp.jpg");
+        } else if (num == 3) {
+            img.setAttribute("src", "272765205_292001522917447_1464082814141239410_n.webp.jpg");
         }
+    } else if (aviao === "A32N") {
+        
+    } else if (aviao === "A21N") {
+        
     }
     
 }
