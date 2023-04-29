@@ -35,7 +35,7 @@
             font-family: manrope-semi, Verdana;
             margin-left: 3vh;
             transform: translateY(-5vh);
-        }
+        }n
         
         .voos {
             background-color: #9961B7;
@@ -1294,8 +1294,21 @@
 
         for (let i = 0; i < item.length; i++) {
             item[i].addEventListener('click', function() {
-                alert('o item clicado foi: ' + String(i));
-                localStorage.setItem('flightClicked', i.toString());
+                const numDiv = this.getElementByClassName('num');
+                const localDiv = this.getElementByClassName('local');
+                const local1 = localDiv.getElementByClassName('from');
+                const local2 = localDiv.getElementByClassName('to');
+                const icaoDiv = this.getElementByClassName('icaos');
+                const icao1 = localDiv.getElementByClassName('from');
+                const icao2 = localDiv.getElementByClassName('to');
+                const num = numDiv.getElementByClassName('fnum');
+                var locals = local1.innerText + "/" + local2.innerText;
+                var icaos = icao1.innerText + "/" + icao2.innerText;
+                var numero = num.innerText;
+                
+                var infos = [locals, icaos, numero];
+                
+                localStorage.setItem('flightClicked', infos);
                 location.href = 'viewflight.html';
             });
         }
