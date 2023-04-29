@@ -1306,9 +1306,9 @@
                 var icaos = icao1.innerText + "/" + icao2.innerText;
                 var numero = num.innerText;
                 
-                var infos = [locals, icaos, numero];
+                const infos = [locals, icaos, numero];
                 
-                localStorage.setItem('flightClicked', infos);
+                localStorage.setItem('flightClicked', JSON.stringify(infos));
                 location.href = 'viewflight.html';
             });
         }
