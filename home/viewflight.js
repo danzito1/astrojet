@@ -9,7 +9,12 @@ window.onload = function() {
     
     var aviao = infos[2].split("/")[1];
     if (aviao === "AT76") {
-        for 
+        let num = Math.floor(Math.random() * 2) + 1;
+        if (num == 1) {
+            img.setAttribute("src", "");
+        } else if (num == 2) {
+            img.setAttribute("src", "");
+        }
     }
     
 }
