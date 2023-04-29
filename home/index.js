@@ -1,5 +1,5 @@
 const flights = document.getElementById('list_flights');
-const item = flights.getElementByTagName('li');
+const item = flights.getElementsByTagName('li');
 
 for (let i = 0; i < item.length; i++) {
     item[i].addEventListener('click', function() {
