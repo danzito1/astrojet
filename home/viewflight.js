@@ -2,6 +2,8 @@ window.onload = function() {
     
     var img = document.getElementById('banner');
     const infos = JSON.parse(localStorage.getItem('flightClicked'));
+    var fromTo = document.getElementById('from_to');
+    var fNum = document.getElementById('fnum');
     if (infos != null && infos[2] != null) {
 
         document.title = "Vôo " + infos[2].split("/")[0];
@@ -25,13 +27,11 @@ window.onload = function() {
             img.setAttribute("src", "272765205_292001522917447_1464082814141239410_n.webp.jpg");
         }
     } else if (aviao === "A32N") {
-        let num = Math.floor(Math.random() * 3) + 1;
+        let num = Math.floor(Math.random() * 2) + 1;
         if (num == 1) {
-            img.setAttribute("src", "272757582_658822735253684_6979556306424127227_n.webp.jpg");
+            img.setAttribute("src", "123 Sem Título_20230429173656.png");
         } else if (num == 2) {
-            img.setAttribute("src", "273824333_394539802477274_8817170027984017018_n.webp.jpg");
-        } else if (num == 3) {
-            img.setAttribute("src", "272765205_292001522917447_1464082814141239410_n.webp.jpg");
+            img.setAttribute("src", "122 Sem Título_20230429172151.png");
         }
     } else if (aviao === "A21N") {
         let num = Math.floor(Math.random() * 2) + 1;
