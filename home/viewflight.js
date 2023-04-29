@@ -25,9 +25,21 @@ window.onload = function() {
             img.setAttribute("src", "272765205_292001522917447_1464082814141239410_n.webp.jpg");
         }
     } else if (aviao === "A32N") {
-        
+        let num = Math.floor(Math.random() * 3) + 1;
+        if (num == 1) {
+            img.setAttribute("src", "272757582_658822735253684_6979556306424127227_n.webp.jpg");
+        } else if (num == 2) {
+            img.setAttribute("src", "273824333_394539802477274_8817170027984017018_n.webp.jpg");
+        } else if (num == 3) {
+            img.setAttribute("src", "272765205_292001522917447_1464082814141239410_n.webp.jpg");
+        }
     } else if (aviao === "A21N") {
-        
+        let num = Math.floor(Math.random() * 2) + 1;
+        if (num == 1) {
+            img.setAttribute("src", "326836368_3308291899487884_7172077089016873445_n.webp.jpg");
+        } else if (num == 2) {
+            img.setAttribute("src", "290827026_1508686659563430_48866762264346745_n.webp.jpg");
+        }
     }
     
 }
