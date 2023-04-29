@@ -3,7 +3,7 @@ const item = flights.getElementByTagName('li');
 
 for (let i = 0; i < item.length; i++) {
     item[i].addEventListener('click', function() {
-        localStorage.
+        localStorage.setItem('flightClicked', i);
     });
 }
 
