@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Novo Projeto.ico">
     <title>Observando vôo</title>
+    <script src="viewflight.js"></script>
     <style>
         html {
             background-image: url('100 Sem Título_20230426111228.png');
@@ -13,13 +14,6 @@
     </style>
   </head>
   <body>
-    <script>
-        window.onload = function() {
-            const infos = JSON.parse(localStorage.getItem('flightClicked'));
-            if (infos != null && infos[2] != null) {
-                document.title = "Observando o vôo " + infos[2].split("•")[0].replace(" ", "");
-            }
-        }
-    </script>
+    
   </body>
 </html>
